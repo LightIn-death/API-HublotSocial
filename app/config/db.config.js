@@ -1,3 +1,7 @@
 module.exports = {
-    // ATLAS_URI : "mongodb+srv://festival:festival@testcluster.mcjdr.mongodb.net/dbTest?retryWrites=true&w=majority"
+    HOST: "localhost",
+    USER: "postgres",
+    PASSWORD: "root",
+    DB: "social",
+    dialect: "postgres"
 };
