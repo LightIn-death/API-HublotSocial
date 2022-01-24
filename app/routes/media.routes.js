@@ -3,25 +3,25 @@ module.exports = app => {
 
     var router = require("express").Router();
 
-    // Create a new Tutorial
+    // Create a new Media
     router.post("/", medias.create);
 
-    // Retrieve all Tutorials
+    // Retrieve all Medias
     router.get("/", medias.findAll);
 
-    // Retrieve all published Tutorials
+    // Retrieve all published Medias
     router.get("/video", medias.findAllVideo);
 
-    // Retrieve a single Tutorial with id
+    // Retrieve a single Media with id
     router.get("/:id", medias.findOne);
 
-    // Update a Tutorial with id
+    // Update a Media with id
     router.put("/:id", medias.update);
 
-    // Delete a Tutorial with id
+    // Delete a Media with id
     router.delete("/:id", medias.delete);
 
-    // Delete all Tutorials
+    // Delete all Medias
     router.delete("/", medias.deleteAll);
 
     app.use('/media', router);
